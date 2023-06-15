@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "lists.h"
 /**
  * print_dlistint - a funct that print all the elements of a list
  * @h: a pointer to the list
