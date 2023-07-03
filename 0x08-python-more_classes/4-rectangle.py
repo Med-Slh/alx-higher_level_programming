@@ -1,4 +1,5 @@
-tion of a rectangle class"""
+#!/usr/bin/python3
+"""definition of a rectangle class"""
 
 
 class Rectangle:
