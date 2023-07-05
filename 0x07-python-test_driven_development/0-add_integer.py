@@ -7,7 +7,7 @@ def add_integer(a, b=98):
 
     Args:
         a (int, float): an intger or float number
-        b (int, float): an intger or float number. Defaults to 89.
+        b (int, float): an intger or float number. Defaults to 98.
 
     Raises:
         TypeError: raised when a or b are not integers or floats
