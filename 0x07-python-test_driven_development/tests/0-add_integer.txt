@@ -11,33 +11,27 @@ This is an example text file in reStructuredText format.  First import
 
 Now use it:
 
-    >>> add_integer(1, 2)
-    3
-    
-    >>> add_integer(100, -2)
-     98
-    
+    >>> add_integer(7, 3)
+    10
+
+    >>> add_integer(5, -3)
+    2
+
+    >>> add_integer(2.1, 3.0)
+    5
+
+    >>> add_integer(2.9, 4.2)
+    8
+
+    >>> add_integer(-4.8, -0.2)
+    -4
+
+    >>> add_integer(2.5, -3)
+    -1
+
     >>> add_integer(2)
     100
-    
-    >>> add_integer(10.3, 6.5)
-    16
-    
-    >>> add_integer(10, 3.5)
-    13
-    
-    >>> add_integer("a", 2)
-    Traceback (most recent call last):
-    TypeError: a must be an integer
-    
-    >>> add_integer(2, "bbb")
-    Traceback (most recent call last):
-    TypeError: b must be an integer
-    
-    >>> add_integer(2.5, "bbb")
-    Traceback (most recent call last):
-    TypeError: b must be an integer
-    
+
     >>> add_integer("hel", 7)
     Traceback (most recent call last):
     TypeError: a must be an integer
