@@ -19,6 +19,8 @@ Now use it:
     100
     >>> add_integer(100.3, -2)
     98
+    >>> add_integer(10, 3.5)
+    13
     >>> add_integer("a", 2)
     Traceback (most recent call last):
     TypeError: a must be an integer
