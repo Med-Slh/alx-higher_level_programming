@@ -2,7 +2,7 @@
 """class BaseGeaometry"""
 
 
-class BaseGeaometry:
+class BaseGeometry:
     """BaseGeometry class"""
     def area(self):
         """raise exception msg"""
