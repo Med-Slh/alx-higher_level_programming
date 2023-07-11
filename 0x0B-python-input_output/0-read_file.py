@@ -3,5 +3,6 @@
 
 
 def read_file(filename=""):
-    with open(filename, mode="r", encouding="utf_8") as f:
+    """fct that read a file"""
+    with open(filename, "r", encoding="utf_8") as f:
         print(f.read(), end="")
