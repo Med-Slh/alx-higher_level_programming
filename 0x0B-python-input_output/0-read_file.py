@@ -3,6 +3,5 @@
 
 
 def read_file(filename=""):
-    with open(filename, "r", encouding="utf_8") as file:
-        for line in file:
-            print(line, end="")
+    with open(filename, "r", encouding="utf_8") as f:
+            print(f.read(), end="")
