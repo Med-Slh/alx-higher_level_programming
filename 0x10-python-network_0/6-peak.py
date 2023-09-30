@@ -16,11 +16,22 @@ def find_peak(list_of_integers):
     Returns:
         peak element.
     """
-    len_of_list = len(list_of_integers)
-    for i, e in enumerate(list_of_integers):
-        if i < len_of_list - 1 and e <= list_of_integers[i + 1]:
-            continue
-        elif 0 < i < len_of_list - 1 and e <= list_of_integers[i - 1]:
-            continue
+
+    my_list = list_of_integers
+    if my_list is None or len(my_list) == 0:
+        return None
+
+    if len(my_list) == 1 or my_list[0] > my_list[1]:
+        return my_list[0]
+
+    start = 0
+    end = len(my_list) - 1
+    while start < end:
+        mid = start + (end - start) // 2
+        if my_list[mid] > my_list[mid - 1] and my_list[mid] > my_list[mid + 1]:
+            return my_list[mid]
+        if my_list[mid - 1] > my_list[mid + 1]:
+            end = mid
         else:
-            return e
+            start = mid + 1
+    return my_list[start]
